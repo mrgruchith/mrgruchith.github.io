@@ -1,0 +1,192 @@
+body,html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+ 
+  /*-------------------------------*/
+  .topnav{
+    width: 100%;
+    background-color: rgb(96, 208, 252);
+    overflow: auto;
+    position: fixed;
+    z-index: 100;
+}
+
+.topnav a{
+    float: left;
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: #000;
+}
+
+.active{
+    background-color: #4CAF50;
+}
+/*-----------------------------------------*/
+  
+  .main-title{
+    position: center;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    size: 40px;
+    margin-top: 30px;
+    text-size-adjust: 50px;
+    background-color: rgb(13, 85, 255);
+    color:white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .main-title h1{
+    font-size: 250%;
+  }
+  .bg-image {
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("../ieee/images/cover_back.JPG"); }
+  
+
+  .ieee-content{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 25px;
+  }  
+  
+
+   /*------------------------------------*/
+
+  /*sigss*/
+
+ /* #sig-box #fest-box{
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    padding: 3em;
+    top: 2%;
+  }*/
+  
+  .sig {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 230px;
+    grid-gap: 1em;
+    
+  }
+
+  .sig-image{
+    box-shadow: 3px 3px 3px 3px rgba(51, 51, 51, 0.247);
+    padding-top: 30%;
+    top: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .s-descrip{
+    background-color: rgb(0,0,0,0.8);
+    color: #f1f1f1;
+    position: absolute;
+    width: 100%;
+    top: -100%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 15%;
+    font-size: 85%;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    font-family: monospace;
+  }
+  .img-art{ background-image: url("../ieee/images/sig/art.jpg")}
+  .img-avishkar{ background-image: url("../ieee/images/sig/avishkar.jpg")}
+  .img-cs{ background-image: url("../ieee/images/sig/cs.jpg")}
+  .img-design{ background-image: url("../ieee/images/sig/design.jpg")}
+  .img-robotics{ background-image: url("../ieee/images/sig/robotics.jpg")}
+  .img-tisp{ background-image: url("../ieee/images/sig/tisp.jpg")}
+  .img-varchas{ background-image: url("../ieee/images/sig/varchas.jpg")}
+  .img-vidhyuth{ background-image: url("../ieee/images/sig/vidyuth.jpg")}
+  .img-web{ background-image: url("../ieee/images/sig/web.jpg")}
+  .img-wie{ background-image: url("../ieee/images/sig/wie.jpg")}
+
+  .sig-image:hover .s-descrip{
+    top: 0%;
+  }
+  .title{
+    width: 100%;
+    height: 20%;
+    top: 0%;
+    text-align: center;
+    background-color: rgb(252, 13, 104);
+    color: white;
+    position: relative;
+    z-index: 1;
+    top: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: translate(0%,-310%);
+  }
+  .title h1{
+    font-size: 150%;
+  }
+
+  /*------------------------------------*/
+
+  /* fests*/
+  .fests{
+    width: 100%;
+    float: left;
+    /*margin-top: 40px;*/
+  }
+  .fest-image{
+    width: 50%;
+    height: 470px;
+    top: 0%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .img2 { background-image: url("../ieee/images/impetus.jpg"); }
+  .img3 { background-image: url("../ieee/images/kagada18.jpg"); }
+
+  .description{
+    background-color: rgb(0,0,0,0.8);
+    color: #f1f1f1;
+    position: absolute;
+    top: -5%;
+    left: -100%;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 150%;
+  }
+
+  .fest-image:hover .description{
+    left: 0%;
+  }
+
+  
