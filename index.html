@@ -2,17 +2,35 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../ieee/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Monoton" rel="stylesheet">
+    <link href="https://www.1001fonts.com/stylish-fonts.html">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../ieee/wow.min.js"></script>
 
 </head>
 <body>
-    
-    <div class="topnav">
-        <a href="#">Home</a>
-        <a href="#">Home</a>
-        <a href="#">Home</a>
-        <a href="#">Home</a>
-    </div>
+ 
+    <!--top navigation bar-->
+    <div class="topnav" >
+        <img src="../ieee/images/og_logo.png">
+        <nav>
+            <ul class="myTopnav" id="myTop">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Fests</a></li>
+                <li class="item"><a href="#">Contacts</a></li>
+                <li class="item"><a href="#">Awards</a></li>
+                <li class="item"><a href="#">Team</a></li>
+                <li class="item"><a href="#">Join IEEE</a></li>
+            </ul>
+        <button class="dropdown" onclick="openme()">Click</button>   
+        </nav>
+      </div>
+      
 
     
     <div class="bg-image img1">
@@ -138,9 +156,9 @@
 
 </div>
 
-<!--Awareds and recognition-->
-    <div class="awards"> 
-        <div class="main-title"><h1>Awards And Recognition</h2></div>
+<!--Awards and recognition-->
+    <div id="awards-box" class="awards-recognition"> 
+        <div class=""><h1>Awards and Recognition</h1> </div>
         <ul class="awards">
             <li>IEEE UVCE won the Best educational activities award in region 10 (Asia and Pacific) in 2018.</li>
             <li>Dr.P Deepa Shenoy, branch advisor of IEEE UVCE won outstanding WIE volunteer award from Bangalore Section in 2018.</li>
@@ -149,6 +167,123 @@
         </ul>
     </div>
 
+    <!-----staffff-->
 
+    <div class="staff">
+        <div class="main-title"><h1>Staff</h1></div>
+        <div class="staff-madam">
+            <div class="person">
+                <img src="../ieee/images/img/pds.jpg">
+                    <h1>Dr.P.Deepa Shenoy</h1>
+                    <p class="portpolio">Branch Advisor</p>
+            </div>
+        </div>
+
+        <div class="others">
+        
+            <div class="person">
+                <img src="../ieee/images/staff/venugopal.png">
+                <div class="details">
+                    <h1 class="name">Dr.Venugopal K R</h1>
+                    <h2 class="portpolio">Branch Patron</h2>
+                </div>
+            </div>
+
+        <div class="person">
+                <img src="../ieee/images/staff/kiran.png">
+                <div class="details">
+                    <h1 class="name">Dr.Kiran K</h1>
+                    <h2 class="portpolio">Branch Counselor</h2>
+                </div>
+            </div>
+        <div class="person">
+            <img src="../ieee/images/staff/pushpa.png">
+            <div class="details">
+                <h1 class="name">Dr.Pushpa C N</h1>
+                <h2 class="portpolio">WIE Mentor</h2>
+            </div>
+        </div>
+        <div class="person">
+            <img src="../ieee/images/staff/veena.png">
+            <div class="details">
+                <h1 class="name">Prof.H S Veena</h1>
+                <h2 class="portpolio">PES Advisor</h2>
+            </div>
+        </div>
+        <div class="person">
+            <img src="../ieee/images/staff/latha.png">
+            <div class="details">
+                <h1 class="name">Dr.Lata B T</h1>
+                <h2 class="portpolio">Branch Mentor</h2>
+            </div>
+        </div>
+        <div class="person">
+            <img src="../ieee/images/staff/venkatesh.png">
+            <div class="details">
+                <h1 class="name">Dr.Venkatesh M</h1>
+                <h2 class="portpolio">Branch Mentor</h2>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+    <!------contact------->
+    <br>
+    <div class="contact" id="foot">
+        <div class="alignEnd">
+            <div class = "wow slideInLeft">
+                <h2>Useful Links</h2>
+                <br>
+                <p>
+                    <a href="https://www.ieee.org" target = "_blank"o>IEEE</a> &nbsp;|&nbsp;
+                    <a href="https://sites.ieee.org/indiacouncil/" target = "_blank"> Region 10 </a> &nbsp;|&nbsp;
+                    <a href="https://ieeebangalore.org" target = "_blank"> Bangalore Section </a>
+                </p>
+                <p><a href="bangaloreuniversity.ac.in/engineering-uvce/" target = "_blank">University Visvesvaraya College of Engineering</a></p>
+            </div>
+            <div class = "wow slideInRight">
+                <h2>Contact Us</h2>
+                <br>
+                <p>
+                    <a href="mailto:mahith.98@gmail.com " target="_blank">
+                        <i class="fa fa-envelope"> </i> Mahith Shetty
+                    </a>
+                </p>
+                <p>
+                <a href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">
+                    <i class="fa fa-map-marker"></i> UVCE, K.R Circle, B.R Ambedkar Veedhi, Bengaluru
+                </a>
+                </p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="icon-arrange">
+            <a href="https://www.facebook.com/ieeeuvce/" data-toggle="tooltip" title="Facebook">
+                <i class="fa fa-facebook icon wow fadeInUpBig" data-wow-duration="0.3s"></i>
+            </a>
+            <a href="https://twitter.com/ieeeuvce" data-toggle="tooltip" title="Twitter">
+                <i class="fa fa-twitter icon wow fadeInUpBig" data-wow-duration="0.4s"></i>
+            </a>
+            <a href="https://www.instagram.com/ieeeuvce/" data-toggle="tooltip" title="Instagram">
+                <i class="fa fa-instagram icon wow fadeInUpBig" data-wow-duration="0.5s"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ieee-uvce-66563332/?trk=public-profile-join-page" data-toggle="tooltip" title="LinkedIn">
+                <i class="fa fa-linkedin-square icon wow fadeInUpBig" data-wow-duration="0.6s"></i>
+            </a>
+        </div>
+        <br>
+        <p style="color: rgba(190, 190, 190, 0.644)">
+            <a href="mailto:shraonedhar@gmail.com" target = "_blank">
+                <i class="fa fa-user"></i> Web Administrator: Ruchith Gaurav K M
+            </a>
+        </p>
+        <br>
+    </div>
+<!--------javascript------>
+<script type="text/javascript">
+    
+    </script>
 </body>
 </html>
