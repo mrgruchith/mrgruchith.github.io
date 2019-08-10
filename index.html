@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../ieee/css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Monoton" rel="stylesheet">
-    <link href="https://www.1001fonts.com/stylish-fonts.html">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../ieee/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="wow.min.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/wow.css">
 
 </head>
 <body>
  
-    <!--top navigation bar-->
-    <div class="topnav" >
-        <img src="../ieee/images/og_logo.png">
-        <nav>
-            <ul class="myTopnav" id="myTop">
-                <li class="item"><a href="#">Home</a></li>
-                <li class="item"><a href="#">Fests</a></li>
-                <li class="item"><a href="#">Contacts</a></li>
-                <li class="item"><a href="#">Awards</a></li>
-                <li class="item"><a href="#">Team</a></li>
-                <li class="item"><a href="#">Join IEEE</a></li>
+    <div class="front-page">
+        <h1 id="demo"></h1>
+    </div>
+
+   <nav class="navbar navbar-default navbar-fixed-top" id="topnav">
+        <div class="navbar1 container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <img src="images/ieeeuvce.png">
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li active><a href="#">Home</a></li>
+                <li ><a href="#fest-box">Fests</a></li>
+                <li ><a href="#foot">Contacts</a></li>
+                <li ><a href="#awards-box">Awards</a></li>
+                <li><a href="#" onclick="membersAppear()">Team</a></li>
+                <li ><a href="https://goo.gl/forms/0yiCii8glI5m8gr93">Join IEEE</a></li>
             </ul>
-        <button class="dropdown" onclick="openme()">Click</button>   
-        </nav>
-      </div>
+          </div>
+        </div>
+      </nav>
       
 
     
-    <div class="bg-image img1">
+    <div class="bg-image img1" id="ieeeimage">
         <div class="ieee-content">
-            <p>IEEE Student Branch of UVCE endeavors to enhance the learning experience of the student community on the UVCE campus. 
+            <h1 class="wow slideInRight" data-wow-duration="2s" data-wow-delay="0s">IEEE UVCE</h1>
+            <hr>
+            <p class="content wow slideInUp" data-wow-duration="2s" data-wow-delay="0s">IEEE Student Branch of UVCE endeavors to enhance the learning experience of the student community on the UVCE campus. 
                 The Student Branch intends on providing different social, cultural and technical events for the students throughout the year. 
                 We encourage the students to take full advantage of the benefits of IEEE membership, including scholarships, competitions, 
                 and conference grants. The Student Branch also emphasizes the students to work with peers in other institutes, academicians, 
@@ -43,13 +59,30 @@
                 encouraging students to be a part of the global IEEE community.</p>
         </div>
     </div>
+<!----------recent-------->
 
+<div class="recent" id="recent-activities">
+    <div class="main-title"><h1>RECENT ACTIVITIES</h1>
+        <span></span><img src="images/star.png" alt=""><span></span>
+        <ul>
+            <li class="wow lightSpeedIn" data-wow-duration="2s" data-wow-delay="0s"><a href="kagada.html">KAGADA 2019</a></li>
+            <li class="wow lightSpeedIn"><a href="">CODEFURY</a></li>
+            <li class="wow lightSpeedIn"><a href="http://www.impetus19.com">IMPETUS 19</a></li>
+            <!--<li>--<a href="#">UDAAN</a></li>-->
+            <li class="wow lightSpeedIn"><a href="https://www.facebook.com/events/140375466500772/">ENNOVANT</a></li>
+        </ul>
+    </div>
+    
+
+</div>
 <!--SIGS-->
 <div id="sig-box">
 
-    <div class="main-title"><h1>SIG's</h1></div>
+    <div class="main-title "><h1>SIG's</h1>
+        <span></span><img src="images/star.png" alt=""><span></span>
+    </div>
     <div class="sig">
-        <div class="sig-image img-wie">
+        <div class="sig-image img-wie wow bounceIn animated" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
             <div class="title"><h1>WIE</h1></div>
             <div class="s-descrip">
                 The group was inaugurated with a panel discussion by eminent women professionals from the technical field. IEEE WIE aims at letting
@@ -57,14 +90,14 @@
                 positions at whichever organisations they join in the future.
             </div>
         </div>
-        <div class="sig-image img-cs">
+        <div class="sig-image img-cs wow bounceIn animated" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
             <div class="title"><h1>COMPUTER SOCIETY</h1></div>
             <div class="s-descrip">
                 Computer Society was started in the year 2016. This society is for all students studying in the 1st year to the final year. 
                 It conducts monthly coding contests called Ncode, Workshops on C, Python, Android and many others mainly aimed at making the students up to date with the technologies.
             </div>
         </div>
-        <div class="sig-image img-vidhyuth">
+        <div class="sig-image img-pes  wow bounceIn animated" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
             <div class="title"><h1>PES</h1></div>
             <div class="s-descrip">
                 Power and Energy Society formed on 30th March 2019 is the newest society of IEEE UVCE. On the occasion of PES day, a Tech-Talk on 
@@ -73,14 +106,14 @@
                 Bhisvajith. We are planning to conduct a PLC workshop in the second week of May.
             </div>
         </div>
-        <div class="sig-image img-art">
+        <div class="sig-image img-art wow bounceIn animated" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
             <div class="title"><h1>ART FORUM</h1></div>
             <div class="s-descrip">
                 Art Forum is an SIG started in 2011 dedicated entirely to artists. Digital art, craft making, decoupage and up cycling are
                 also supported. Various contests like doodle making, mask making are conducted for the students by this SIG.
             </div>
         </div>
-        <div class="sig-image img-avishkar">
+        <div class="sig-image img-avishkar wow bounceIn animated" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
             <div class="title"><h1>AVISHKAR</h1></div>
             <div class="s-descrip">
                 Avishkar (Sanskrit term for ‘innovation’), the guiding beacon for enlightened minds is an elite research group of IEEE UVCE
@@ -88,7 +121,7 @@
                 of IEEE UVCE.
             </div>
         </div>
-        <div class="sig-image img-web">
+        <div class="sig-image img-web  wow bounceIn animated" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
             <div class="title"><h1>WEB DESIGN</h1></div>
             <div class="s-descrip">
                 The web design SIG was started in April 2017. This is the web tweaking pavilion of IEEE UVCE. Web team specializes in conducting
@@ -96,7 +129,7 @@
                 designing have been conducted.
             </div>
         </div>
-        <div class="sig-image img-robotics">
+        <div class="sig-image img-robotics wow bounceIn animated" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
             <div class="title"><h1>ROBOTICS</h1></div>
             <div class="s-descrip">
                 The Robotics Club was started in the year 2009. The formation of this club seemed inevitable since no aspect of life is
@@ -104,7 +137,7 @@
                 by conducting workshops to undertake basic to complex robotics projects.
             </div>
         </div>
-        <div class="sig-image img-design">
+        <div class="sig-image img-design wow bounceIn animated" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
             <div class="title"><h1>DESIGN</h1></div>
             <div class="s-descrip">
                 The design SIG was started in April 2017. The design team of IEEE UVCE consists of Graphic designers who design and conduct
@@ -112,7 +145,7 @@
                 for various events conducted by IEEE UVCE.
             </div>
         </div>
-        <div class="sig-image img-varchas">
+        <div class="sig-image img-varchas wow bounceIn animated" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
             <div class="title"><h1>VARCHAS</h1></div>
             <div class="s-descrip">
                 This is the astronomy club of IEEE UVCE which deals with concepts of science and Astrophysics. It was started in May 2012.
@@ -120,7 +153,7 @@
                 astronomy.
             </div>
         </div>
-        <div class="sig-image img-tisp">
+        <div class="sig-image img-tisp wow bounceIn animated" data-wow-delay="1.0" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceIn;">
             <div class="title"><h1>TISP AND STAR</h1></div>
             <div class="s-descrip">
                 TISP (Teacher in Service Program) and STAR (Student And Teacher Research Program) aim at the improvement in delivery of knowledge.
@@ -131,49 +164,60 @@
     
     </div>
 </div>
-<div id="fest-box" class="fests">
-    <div class="main-title"><h1>FESTS</h1></div> 
-    <div class="fest-image">
+
+
+
+
+<div id="fest-box" >
+    <div class="main-title"><h1>FESTS</h1> 
+        <span></span><img src="images/star.png" alt=""><span></span>
+    </div>
+    <div class="fests">
+    <div class="fest-image wow fadeInLeftBig">
         <div class="bg-image img2"></div>
         <ul class="description">
-            <li>KAGADA is the annual technical paper presentation competition organized by IEEE UVCE.</li>
+            <li><a href="kagada.html">KAGADA</a> is the annual technical paper presentation competition organized by IEEE UVCE.</li>
             <li>Categories for paper presentation: UG ,PG and WIE.</li>
             <li>Apart from paper presentation ,project and poster presentation is also conducted.</li>
             <li>Programme from WIE and STAR is also organised.</li>
         </ul>
     </div>
-    <div class="fest-image">  
+    <div class="fest-image wow fadeInRightBig">  
         <div class="bg-image img3"></div>
         <ul class="description">
-            <li><a href = "www.impetus19.com" target = "_blank">Impetus</a> is a National level technical fest.</li>
+            <li><a href = "www.impetus19.com">Impetus</a> is a National level technical fest.</li>
             <li>The fest is preceded by curtain raisers which consists of workshops, seminars.</li>
             <li>It is based on different innovative themes every year</li>
             <li>About 20 events are conducted among which Summit, Mock placements, The Alchemist, Coding event witness
                 huge participation.</li>
         </ul>
-    </div>
-
-
 </div>
+</div>
+</div>
+<br>
 
 <!--Awards and recognition-->
-    <div id="awards-box" class="awards-recognition"> 
-        <div class=""><h1>Awards and Recognition</h1> </div>
+<div id="awards-box" class="awards-recognition"> 
+        <div class="main-title"><h1>Awards and Recognition</h1> 
+            <span></span><img src="images/star.png" alt=""><span></span>
+        </div>
         <ul class="awards">
-            <li>IEEE UVCE won the Best educational activities award in region 10 (Asia and Pacific) in 2018.</li>
-            <li>Dr.P Deepa Shenoy, branch advisor of IEEE UVCE won outstanding WIE volunteer award from Bangalore Section in 2018.</li>
-            <li> IEEE UVCE won the best website award in Bangalore section in 2018.</li>
-            <li>Karthik Kolle, chairperson of IEEE UVCE, won outstanding student volunteer award from Bangalore section in 2018.</li>
+            <li class="wow fadeInRightBig" data-wow-duration="0.4s">IEEE UVCE won the Best educational activities award in region 10 (Asia and Pacific) in 2018.</li>
+            <li class="wow fadeInLeftBig" data-wow-duration="0.8s">Dr.P Deepa Shenoy, branch advisor of IEEE UVCE won outstanding WIE volunteer award from Bangalore Section in 2018.</li>
+            <li class="wow fadeInRightBig" data-wow-duration="1.2s"> IEEE UVCE won the best website award in Bangalore section in 2018.</li>
+            <li class="wow fadeInLeftBig" data-wow-duration="1.6s">Karthik Kolle, chairperson of IEEE UVCE, won outstanding student volunteer award from Bangalore section in 2018.</li>
         </ul>
-    </div>
+</div>
 
     <!-----staffff-->
 
-    <div class="staff">
-        <div class="main-title"><h1>Staff</h1></div>
+    <div class="staff" id="teachers">
+        <div class="main-title"><h1>STAFF</h1>
+        <span></span><img src="images/stafff.png" alt=""><span></span>
+       </div>
         <div class="staff-madam">
-            <div class="person">
-                <img src="../ieee/images/img/pds.jpg">
+            <div class="person wow zoomInLeft" data-wow-duration="0.4s">
+                <img src="images/img/pds.jpg">
                     <h1>Dr.P.Deepa Shenoy</h1>
                     <p class="portpolio">Branch Advisor</p>
             </div>
@@ -181,44 +225,44 @@
 
         <div class="others">
         
-            <div class="person">
-                <img src="../ieee/images/staff/venugopal.png">
+            <div class="person  wow zoomInRight " data-wow-duration="0.4s">
+                <img src="images/staff/venugopal.png">
                 <div class="details">
                     <h1 class="name">Dr.Venugopal K R</h1>
                     <h2 class="portpolio">Branch Patron</h2>
                 </div>
             </div>
 
-        <div class="person">
-                <img src="../ieee/images/staff/kiran.png">
+        <div class="person wow zoomInRight" data-wow-duration="0.6s">
+                <img src="images/staff/kiran.png" >
                 <div class="details">
                     <h1 class="name">Dr.Kiran K</h1>
                     <h2 class="portpolio">Branch Counselor</h2>
                 </div>
             </div>
-        <div class="person">
-            <img src="../ieee/images/staff/pushpa.png">
+        <div class="person wow zoomInRight" data-wow-duration="0.8s">
+            <img src="images/staff/pushpa.png">
             <div class="details">
                 <h1 class="name">Dr.Pushpa C N</h1>
                 <h2 class="portpolio">WIE Mentor</h2>
             </div>
         </div>
-        <div class="person">
-            <img src="../ieee/images/staff/veena.png">
-            <div class="details">
+        <div class="person wow zoomInRight" data-wow-duration="1.0s">
+            <img src="images/staff/veena.png">
+            <div class="details">   
                 <h1 class="name">Prof.H S Veena</h1>
                 <h2 class="portpolio">PES Advisor</h2>
             </div>
         </div>
-        <div class="person">
-            <img src="../ieee/images/staff/latha.png">
+        <div class="person wow zoomInRight" data-wow-duration="1.2s">
+            <img src="images/staff/latha.png">
             <div class="details">
                 <h1 class="name">Dr.Lata B T</h1>
                 <h2 class="portpolio">Branch Mentor</h2>
             </div>
         </div>
-        <div class="person">
-            <img src="../ieee/images/staff/venkatesh.png">
+        <div class="person wow zoomInRight" data-wow-duration="1.4s">
+            <img src="images/staff/venkatesh.png">
             <div class="details">
                 <h1 class="name">Dr.Venkatesh M</h1>
                 <h2 class="portpolio">Branch Mentor</h2>
@@ -226,6 +270,356 @@
         </div>
     </div>
     </div>
+
+    <!--------------------------team---------------------->
+    <br>
+        <div id="members">
+            <div id="execom">
+                <img class="close" src="images/close.svg" alt="Close" onclick="membersHide()">
+                <div>
+                    <h2 class="blue">Execom 19-20</h2>
+                    <div class="line-down"></div>
+
+                    <!--Main Body-->
+                    <br>
+                    <div class="title-color">Main Body</div>
+                    <div class="members1">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Mahith Shetty</td>
+                                    <td>Chairperson</td>
+                                    <td>Final Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Keerthana A</td>
+                                    <td>Vice-Chairperson</td>
+                                    <td>Final Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Raja Mahapatra</td>
+                                    <td>Vice-Chairperson</td>
+                                    <td>Final Year</td>
+                                </tr>
+                                <tr>
+                                    <td>AKash Gowda</td>
+                                    <td>Vice-Chairperson</td>
+                                    <td>Final Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Gayathri S</td>
+                                    <td>Treasurer</td>
+                                    <td>Final Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Rajath R L</td>
+                                    <td>Joint Tresurer</td>
+                                    <td>Third Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Kennith O Koshy</td>
+                                    <td>General Secratary</td>
+                                    <td>Third Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Hamsa Shree N A</td>
+                                    <td>Joint Secretary</td>
+                                    <td>Third Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Vishal M Kanthi</td>
+                                    <td>Joint Secretary</td>
+                                    <td>Third Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Niveditha G</td>
+                                    <td>Membership Incharge</td>
+                                    <td>Third Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Shubham Sahoo</td>
+                                    <td>Membership Incharge</td>
+                                    <td>Third Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Harshitha M</td>
+                                    <td>SAC Coordinator</td>
+                                    <td>Fourth Year</td>
+                                </tr>
+                                <tr>
+                                    <td>Vijay Kumar M S</td>
+                                    <td>SAC Coordinator</td>
+                                    <td>Fourth Year</td>
+                                </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- WIE MEMBERS -->
+                <br>
+                <div class="title-color">WIE</div>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Darshan S</td>
+                                <td>Chairperson</td>
+                                <td>Fourth Year</td>
+
+                            </tr>
+                            <tr>
+                                <td>Seema M</td>
+                                <td>Vice-Chairperson</td>
+                                <td>Fourth</td>
+                            </tr>
+                            <tr>
+                                <td>Mahima Pradeep</td>
+                                <td>General Secratary</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Supriya V Kurpad</td>
+                                <td>Joint Secratary</td>
+                                <td>Third Year</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Computer Society -->
+                <br>
+                <div class="title-color">Computer Society</div>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Venkatesh Belavadi</td>
+                                <td>Chairperson</td>
+                                <td>Fourth Year</td>
+                            </tr>
+                            <tr>
+                                <td>Anagesh M</td>
+                                <td>Vice-Chairperson</td>
+                                <td>Fourth Year</td>
+                            </tr>
+                            <tr>
+                                <td>Jerry Allan Akshay</td>
+                                <td>Vice-Chairperson</td>
+                                <td>Fourth Year</td>
+                            </tr>
+                            <tr>
+                                <td>Sriram K K</td>
+                                <td>General Secratary</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Charan M K</td>
+                                <td>Joint Secretary</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Pooja Hedge</td>
+                                <td>Joint Secretary</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Nayana Sajji</td>
+                                <td>NCode Lead</td>
+                                <td>Third Year</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- SIGs -->
+                <br>
+                <div class="title-color">SIGs</div>
+                <div>
+                    <table>
+                        <tbody>
+                           <tr>
+                                <td>Dinashree Dinesh</td>
+                                <td>Art Form</td>
+                                <td>Fourth Year</td>
+                            </tr>
+                            <tr>
+                                <td>Shabana K C</td>
+                                <td>Art Forum</td>
+                                <td>Fourth Year</td>
+                            </tr>
+                            <tr>
+                                <td>Aditya Kumar</td>
+                                <td>Art Forum</td>
+                                <td>Fourth Year</td>
+                            </tr>
+                            <tr>
+                                <td>Gokul K</td>
+                                <td>Art Forum</td>
+                                <td>Fourth Year</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Naveen Kumar</td>
+                                <td>Avishkar</td>
+                                <td>Fourth Year</td>
+                            </tr>
+                            <tr>
+                                <td>Harish Ramesh</td>
+                                <td>Avishkar</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Srinivas K</td>
+                                <td>Avishkar</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Ruchith Gaurav K M</td>
+                                <td>Web Development</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Soumya S Raju</td>
+                                <td>Web Development</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Manoj Kumar A</td>
+                                <td>Web Development</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Sandhya Shree N</td>
+                                <td>Graphic Design</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Venkateshprasad</td>
+                                <td>Robotics</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Smruthi L</td>
+                                <td>TISP and STAR</td>
+                                <td>Fourth Year</td>
+                            </tr>
+                            <tr>
+                                <td>Harshitha B R</td>
+                                <td>TISP and STAR</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Honavar Sanyukta</td>
+                                <td>Literary Club</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Sanjana Ramesh</td>
+                                <td>Literary Club</td>
+                                <td>Third Year</td>
+                            </tr>
+                            <tr>
+                                <td>Sankeerth M</td>
+                                <td>Literary Club</td>
+                                <td>Third Year</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Repcom -->
+            <br>
+            <div id="repcom">
+                <div>
+                    <h2 class="blue">Repcom 19-20</h2>
+                    <div class="line-down"></div>
+                </div>
+                <br>
+                <div class="title-color">Repcom Members</div>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Anam Ali</td>
+                                <td>CSE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Munnoli Sammed Jaykumar</td>
+                                <td>CSE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Niveditha Kulkarni</td>
+                                <td>CSE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Ali Mohammed Habibullah</td>
+                                <td>ISE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Vikas Gowda L V</td>
+                                <td>ISE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Devika K N</td>
+                                <td>EEE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>D S L Rasagnya</td>
+                                <td>EEE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Jitendra Prasad K K</td>
+                                <td>EEE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Varsha Nagesh</td>
+                                <td>EEE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Ajantha Hebbar</td>
+                                <td>ECE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Pruthvi Raj R</td>
+                                <td>ECE</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Srinivas</td>
+                                <td>MECH</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Sanketh Rajshekhar Patil</td>
+                                <td>MECH</td>
+                                <td>Second Year</td>
+                            </tr>
+                            <tr>
+                                <td>Vinay Desai</td>
+                                <td>MECH</td>
+                                <td>Second Year</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+
 
     
     <!------contact------->
@@ -273,17 +667,61 @@
                 <i class="fa fa-linkedin-square icon wow fadeInUpBig" data-wow-duration="0.6s"></i>
             </a>
         </div>
-        <br>
+        <br>cmd
         <p style="color: rgba(190, 190, 190, 0.644)">
             <a href="mailto:shraonedhar@gmail.com" target = "_blank">
-                <i class="fa fa-user"></i> Web Administrator: Ruchith Gaurav K M
-            </a>
+                <i class="fa fa-user"></i> Web Administrator: Ruchith Gaurav K M</a>
         </p>
         <br>
     </div>
-<!--------javascript------>
-<script type="text/javascript">
-    
-    </script>
 </body>
+<!--------javascript------>
+
+<script>
+     var i = 0;
+    var txt = 'Welcome to IEEE UVCE....   ';
+    var speed = 300;
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+        else{
+            membersHide();
+        }
+    }
+    setTimeout( () => {
+        typeWriter();
+    }, 2000);
+
+    
+
+</script>
+
+
+<script type="text/javascript">
+
+$("#topnav").hide(); $("#ieeeimage").hide(); $("#recent-activities").hide(); $("#sig-box").hide();
+$("#fest-box").hide(); $("#awards-box").hide(); $("#teachers").hide();$("#foot").hide(); 
+
+   $(document).ready(function(){
+
+       
+       new WOW().init();
+        $('.main-toggle').click(function(){
+            $('nav').toggleClass('active')
+        })
+        
+   })
+   
+   function membersAppear(){ $("#topnav").hide(); $("#ieeeimage").hide(); $("#recent-activities").hide(); $("#sig-box").hide();$('.front-page').hide();
+    $("#fest-box").hide(); $("#awards-box").hide(); $("#teachers").hide();$("#foot").hide(); $("#members").css("display", "block"); $("#members").css("animation", "appear 1s ease-in 0s"); }
+
+    function membersHide() { $("#members").css("animation", "reverseAppear 0.7s ease-in 0s"); $("#members").css("display", "none");$('.front-page').hide();
+    $("#topnav").show(); $("#ieeeimage").show(); $("#sig-box").show(); $("#fest-box").show(); $("#awards-box").show(); $("#teachers").show();$("#foot").show();$("#recent-activities").show();
+    $("#foot").show(); }
+    </script>
+
+
 </html>
